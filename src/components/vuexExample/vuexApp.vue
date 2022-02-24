@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container row col-md-6 mx-auto">
         <AddProduct />
         <ProductList />
     </div>

@@ -20,10 +20,10 @@ export default {
     },
   }, // this.$el return actual template dom node
   beforeMount() {
-    console.log(this.$el); // undefined
+    //console.log(this.$el); // undefined
   },
   mounted() {
-    console.log(this.$el); // gives actual dom node
+    //console.log(this.$el); // gives actual dom node
   },
 };
 </script>

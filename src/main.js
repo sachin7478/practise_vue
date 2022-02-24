@@ -6,14 +6,19 @@ import PractiseApp from './PractiseApp.vue'
 import NotFound from './components/router/NotFound'
 import DynamicComponent from '@/components/DynamicComponent'
 import store from './store'
+import vuexApp from './components/vuexExample/vuexApp'
+
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 Vue.use(VueRouter);
 const routes = [
-  {path:'/', component:PractiseApp},
+  {path:'/', component:vuexApp},
   {path:'/about', component:AboutTemplate},
   {path:'/practise', component:PractiseApp},
   {path:'/dynamic', component:DynamicComponent},
   {path:'/about/:id', component:AboutTemplate},
+  {path:'/vuex', component:vuexApp},
   {path:'*', component:NotFound}
 ]
 const router = new VueRouter({routes})
