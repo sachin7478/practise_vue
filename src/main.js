@@ -5,6 +5,7 @@ import AboutTemplate from './components/router/AboutTemplate'
 import PractiseApp from './PractiseApp.vue'
 import NotFound from './components/router/NotFound'
 import DynamicComponent from '@/components/DynamicComponent'
+import store from './store'
 
 Vue.use(VueRouter);
 const routes = [
@@ -18,7 +19,8 @@ const routes = [
 const router = new VueRouter({routes})
 new Vue({
   router:router,
-  render: h => h(RouterApp),
+  store,
+  render: h => h(RouterApp)
 }).$mount('#app')
 
 Vue.filter('toUpper',(val)=>{
