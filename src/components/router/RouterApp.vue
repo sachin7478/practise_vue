@@ -11,6 +11,9 @@
       <li class="nav-item active">
         <router-link to='/practise' class="nav-link">Practise</router-link>
       </li>
+      <li class="nav-item active">
+        <router-link to='/newPractise' class="nav-link">new Practise</router-link>
+      </li>
       <li class="nav-item">
         <router-link to='/about/100' class="nav-link">About_param</router-link>
       </li>
@@ -25,6 +28,9 @@
       </li>
       <li class="nav-item">
         <router-link to='/youtube' class="nav-link">Vuex Youtube</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to='/pagination' class="nav-link">Pagination</router-link>
       </li>
     </ul>
   </div>

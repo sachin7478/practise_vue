@@ -3,6 +3,8 @@ import RouterApp from './components/router/RouterApp'
 import VueRouter from 'vue-router'
 import AboutTemplate from './components/router/AboutTemplate'
 import PractiseApp from './PractiseApp.vue'
+import NewPractise from './practise/NewPractise.vue'
+import PaginationApp from '@/components/PaginationApp'
 import NotFound from './components/router/NotFound'
 import DynamicComponent from '@/components/DynamicComponent'
 import store from './store'
@@ -16,7 +18,9 @@ const routes = [
   {path:'/', component:vuexApp},
   {path:'/about', component:AboutTemplate},
   {path:'/practise', component:PractiseApp},
+  {path:'/newPractise', component:NewPractise},
   {path:'/dynamic', component:DynamicComponent},
+  {path: '/pagination', component: PaginationApp},
   {path:'/about/:id', component:AboutTemplate},
   {path:'/vuex', component:vuexApp},
   {path:'*', component:NotFound}
