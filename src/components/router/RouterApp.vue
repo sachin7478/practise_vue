@@ -1,55 +1,88 @@
-
 <template>
-<div class='appContainer'>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a  class="navbar-brand">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <router-link to='/practise' class="nav-link">Practise</router-link>
-      </li>
-      <li class="nav-item active">
-        <router-link to='/newPractise' class="nav-link">new Practise</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/about/100' class="nav-link">About_param</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/about' class="nav-link">About</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/dynamic' class="nav-link">Dynamic component</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/vuex' class="nav-link">Vuex Eg</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/youtube' class="nav-link">Vuex Youtube</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to='/pagination' class="nav-link">Pagination</router-link>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <div class='appContainer'>
+    
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li class="nav-item active">
+              <router-link to='/practise' class="nav-link">Practise</router-link>
+            </li>
+            <li class="nav-item active">
+              <router-link to='/newPractise' class="nav-link">new Practise</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/about/100' class="nav-link">About_param</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/about' class="nav-link">About</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/dynamic' class="nav-link">Dynamic component</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/vuex' class="nav-link">Vuex Eg</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/youtube' class="nav-link">Vuex Youtube</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to='/pagination' class="nav-link">Pagination</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <router-view></router-view>
-</div>
+  </div>
 
 </template>
+
 <script>
-  export default {
-      name:'RouterApp'
-  }
+import '../../index.css';
+export default {
+  name: 'RouterApp'
+}
 </script>
 
 <style>
-  #app, .appContainer { text-align: center; color: #3f3b44; font-size:19px;  }
-  .container{display:flex;justify-content: center}
-  input{height:35px; margin:5px}
-  .bgGreen{background-color: aquamarine}
-  .cBlue{color:rgb(27, 12, 158)}
-  .cRed{color:red}
+#app,
+.appContainer {
+  text-align: center;
+  color: #3f3b44;
+  font-size: 19px;
+}
+
+.container {
+  display: flex;
+  justify-content: center
+}
+
+input {
+  height: 35px;
+  margin: 5px
+}
+
+.bgGreen {
+  background-color: aquamarine
+}
+
+.cBlue {
+  color: rgb(27, 12, 158)
+}
+
+.cRed {
+  color: red
+}
 </style>

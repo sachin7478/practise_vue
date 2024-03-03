@@ -10,9 +10,6 @@ import DynamicComponent from '@/components/DynamicComponent'
 import store from './store'
 import vuexApp from './components/vuexExample/vuexApp'
 
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 Vue.use(VueRouter);
 const routes = [
   {path:'/', component:vuexApp},
